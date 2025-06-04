@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avaliação Corporal</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doug Fit - Início</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">🏠 Início</a>
-    <a href="comunidade.html">💬 Comunidade</a>
-    <a href="avaliacao.html">📊 Avaliação</a>
-    <a href="treino.html">💪 Treinos</a>
-    <a href="dieta.html">🍽️ Dieta</a>
-  </nav>
-  <main>
-    <h1>Avaliação Corporal</h1>
-    <form>
-      <label>Peso (kg): <input type="number" name="peso" /></label><br />
-      <label>Altura (cm): <input type="number" name="altura" /></label><br />
-      <label>Medidas (ex: cintura, peito, braços): <input type="text" name="medidas" /></label><br />
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
+  <div class="container">
+    <header>
+      <h1>Doug Fit</h1>
+      <p>Bem-vindo(a) de volta!</p>
+    </header>
+
+    <main class="grid-buttons">
+      <button onclick="navegar('treino')">
+        <i class="fas fa-dumbbell"></i>
+        <span>Treino</span>
+      </button>
+      <button onclick="navegar('dieta')">
+        <i class="fas fa-utensils"></i>
+        <span>Dieta</span>
+      </button>
+      <button onclick="navegar('comunidade')">
+        <i class="fas fa-users"></i>
+        <span>Comunidade</span>
+      </button>
+      <button onclick="navegar('avaliacao')">
+        <i class="fas fa-chart-line"></i>
+        <span>Avaliação</span>
+      </button>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Doug Fit. Todos os direitos reservados.</p>
+    </footer>
+  </div>
 </body>
 </html>

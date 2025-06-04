@@ -1,13 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
-  color: #fff;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,55 +8,49 @@ body {
 }
 
 .container {
-  text-align: center;
-  width: 100%;
-  max-width: 500px;
-  padding: 20px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #00ffcc;
-}
-
-header p {
-  font-size: 1rem;
-  margin-top: 5px;
-  color: #ccc;
-}
-
-.grid-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 40px 0;
-}
-
-.grid-buttons button {
-  background-color: #1f1f1f;
-  border: none;
-  padding: 30px 10px;
-  border-radius: 15px;
-  color: #fff;
-  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
+  gap: 30px;
 }
 
-.grid-buttons button:hover {
-  background-color: #00ffcc;
-  color: #121212;
-  transform: scale(1.05);
+.form {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
 }
 
-.grid-buttons i {
-  font-size: 2rem;
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-footer {
-  font-size: 0.8rem;
-  color: #555;
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3366ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #254eda;
+}
+
+a {
+  color: #3366ff;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }

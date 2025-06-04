@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doug Fit - Gerador de Treino</title>
+  <link rel="stylesheet" href="gerador.css" />
+  <script src="gerador.js" defer></script>
+</head>
+<body>
+  <div class="gerador-container">
+    <div class="header">
+      <h1><span class="logo">DOUG<span class="fit">FIT</span></span></h1>
+      <p>Treinos Evolutivos</p>
+    </div>
+
+    <label for="objetivo">Escolha seu objetivo:</label>
+    <select id="objetivo">
+      <option>Hipertrofia</option>
+      <option>Emagrecimento</option>
+      <option>Ganho de Massa Muscular</option>
+      <option>Definição</option>
+      <option>Funcional</option>
+      <option>Resistência</option>
+      <option>Força</option>
+      <option>Corpo Inteiro</option>
+      <option>Iniciantes</option>
+    </select>
+
+    <button onclick="gerarTreino()">Gerar Treino</button>
+
+    <div class="resultado">
+      <h2>Seu treino aparecerá aqui</h2>
+      <ul id="treino-lista"></ul>
+    </div>
+
+    <hr />
+
+    <div class="evolucao">
+      <h3>Evolução Programada</h3>
+      <p>Próxima atualização: <span id="dias">30</span> dias</p>
+      <div class="grafico">
+        <div class="barra" style="height: 40%"></div>
+        <div class="barra" style="height: 60%"></div>
+        <div class="barra" style="height: 80%"></div>
+        <div class="barra" style="height: 100%"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Doug Fit – Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
